@@ -1,6 +1,6 @@
 # Webtek Gruppe 13
 
-Blackboard: [Gruppe 13](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1) • [Webtek BlackBoard](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1)
+Blackboard: [Gruppe 13](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1) • [Webtek](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1)
 
 ---
 
