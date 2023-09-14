@@ -6,7 +6,7 @@ Blackboard: [Gruppe 13](https://ntnu.blackboard.com/webapps/blackboard/execute/m
 
 ## Oppgaver
 
-<a href="https://ntnu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_43546_1&content_id=_2148021_1&mode=reset" style="padding: 1ch 1.5ch 1ch 1.5ch; border-radius: 0.33rem; background-color: rgba(0, 0, 0, 0.125">Oversikt og innlevering</a>
+[Oversikt og innlevering](https://ntnu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_43546_1&content_id=_2148021_1&mode=reset")
 
 <br />
 
