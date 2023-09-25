@@ -43,6 +43,13 @@ main {
 	gap: 2rem;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	margin-bottom: 0.5ch;
+}
+
 h1 {
 	font-size: 3rem;
 }
@@ -60,6 +67,30 @@ h4 {
 	font-size: 1.25rem;
 }
 
+ol > li,
+ul > li {
+	margin-left: 3ch;
+}
+
 p {
 	font-size: 1rem;
+}
+
+small {
+	font-size: 0.75rem;
+}
+
+.indent {
+	position: relative;
+	margin-left: 3ch;
+}
+
+.indent:before {
+	content: "";
+	position: absolute;
+	left: -3ch;
+	top: 2.5%;
+	height: 95%;
+	width: 2px;
+	border-left: 2px solid rgb(230, 229, 224);
 }
