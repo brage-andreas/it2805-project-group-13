@@ -2,24 +2,24 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	font: inherit;
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 html {
-	color-scheme: dark light;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color-scheme: dark light;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 /* ul,
@@ -37,27 +37,30 @@ video {
 } */
 
 main {
-	max-width: 70ch;
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
+  max-width: 70ch;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h1 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
-
 h2 {
-	font-size: 2rem;
+  font-size: 2.5rem;
 }
-
-h3,
-h4,
-h5,
+h3 {
+  font-size: 2.25rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.75rem;
+}
 h6 {
-	font-size: 2rem;
+  font-size: 1.5rem;
 }
-
 p {
-	font-size: 1.5rem;
+  font-size: 1rem;
 }
