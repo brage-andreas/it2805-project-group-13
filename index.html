@@ -3,27 +3,60 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Portal</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			hr {
+				margin: 1rem 0 1rem 0;
+			}
+
+			.box {
+				display: flex;
+				flex-direction: row;
+				flex-grow: 1;
+				gap: 1rem;
+			}
+
+			.button {
+				background-color: #e3e3e3;
+				border-radius: 0.25rem;
+				color: black;
+				padding: 0.66rem 1rem 0.66rem 1rem;
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
-		<main>
+		<main style="margin: 2.5dvh 35dvw 2.5dvh 35dvw">
 			<header>
 				<h1>Webtek group 13 portal</h1>
+				<small>Brage A, Brage M, Maksymilian, Malik, og Philip</small>
 			</header>
-			<ol>
-				<li>
-					<a href="Documents/P1_requirements_13.html">Project 1</a>
-				</li>
-				<li>
-					<a href="Documents/P2_requirements_13.html">Project 2</a>
-				</li>
-				<li>
-					<a href="Documents/P3_requirements_13.html">Project 3</a>
-				</li>
-				<li>
-					<a href="Documents/P4_requirements_13.html">Project 4</a>
-				</li>
-			</ol>
+
+			<hr />
+
+			<div class="box">
+				<a href="Documents/P1_requirements_13.html" class="button">
+					Project 1
+				</a>
+
+				<a href="Documents/P2_requirements_13.html" class="button">
+					Project 2
+				</a>
+
+				<a href="Documents/P3_requirements_13.html" class="button">
+					Project 3
+				</a>
+
+				<a href="Documents/P4_requirements_13.html" class="button">
+					Project 4
+				</a>
+			</div>
 		</main>
 	</body>
 </html>
