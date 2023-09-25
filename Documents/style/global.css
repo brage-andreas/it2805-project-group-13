@@ -12,7 +12,7 @@
 }
 
 html {
-	color-scheme: dark light;
+	color-scheme: light;
 	font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -20,6 +20,7 @@ body {
 	min-height: 100dvh;
 	display: flex;
 	justify-content: center;
+	padding: 2.5dvh 0 2.5dvh 0;
 }
 
 /* ul,
@@ -69,7 +70,7 @@ h4 {
 
 ol > li,
 ul > li {
-	margin-left: 3ch;
+	margin-left: 4ch;
 }
 
 p {
@@ -82,13 +83,13 @@ small {
 
 .indent {
 	position: relative;
-	margin-left: 3ch;
+	margin-left: 2ch;
 }
 
 .indent:before {
 	content: "";
 	position: absolute;
-	left: -3ch;
+	left: -2ch;
 	top: 2.5%;
 	height: 95%;
 	width: 2px;
