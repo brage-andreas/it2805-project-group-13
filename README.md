@@ -1,7 +1,6 @@
 # Webtek Gruppe 13
 
-### Hosted on [Github Pages](https://brage-andreas.github.io/webtek-gruppe-13/)
-
+### Hosted on [Github Pages](https://brage-andreas.github.io/webtek-gruppe-13/) and [NTNU](https://folk.ntnu.no/philipbk/webtek-gruppe-13/)
 Blackboard: [Gruppe 13](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1) • [Webtek](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1)
 
 ---
