@@ -18,30 +18,18 @@ html {
 
 body {
 	min-height: 100dvh;
-	display: flex;
-	justify-content: center;
 	padding: 2.5dvh 0 2.5dvh 0;
 }
 
-/* ul,
-ol,
-li {
-  list-style: none;
-} */
+/* -------- */
 
-/* img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-} */
+:root {
+	--light-grey: 230, 229, 224;
+}
 
 main {
 	max-width: 70ch;
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
+	margin: 1rem auto 1rem auto;
 }
 
 h1,
@@ -81,6 +69,32 @@ small {
 	font-size: 0.75rem;
 }
 
+.pre-layout {
+	min-width: 70ch;
+	width: 50dvw;
+	margin: 0 auto 1rem auto;
+}
+
+a.button {
+	background-color: rgb(var(--light-grey));
+	border-radius: 0.25rem;
+	color: black;
+	padding: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
 .indent {
 	position: relative;
 	margin-left: 2ch;
@@ -93,5 +107,9 @@ small {
 	top: 2.5%;
 	height: 95%;
 	width: 2px;
-	border-left: 2px solid rgb(230, 229, 224);
+	border-left: 2px solid rgb(var(--light-grey));
+}
+
+.indent .indent:before {
+	border-left: 2px solid rgba(var(--light-grey), 0.66);
 }

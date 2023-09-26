@@ -17,44 +17,103 @@
 		<title>P1 Papa's - Gruppe 13</title>
 	</head>
 	<body>
-		<main>
+		<!-- Author information and pre-layout -->
+		<div class="pre-layout flex-col">
+			<div class="flex-row" style="align-items: baseline">
+				<h1 style="font-size: 1.5rem">P1</h1>
+				<h3 style="font-size: 0.875rem">
+					Brage A, Brage M, Maksymilian, Malik, og Philip
+				</h3>
+			</div>
+
+			<div class="flex-row">
+				<a
+					href="https://brage-andreas.github.io/webtek-gruppe-13/"
+					style="font-size: 0.875rem"
+					class="button"
+				>
+					⬅️ Back to portal
+				</a>
+
+				<a
+					href="https://github.com/brage-andreas/webtek-gruppe-13/"
+					target="_blank"
+					style="font-size: 0.875rem"
+					class="button"
+				>
+					😸 GitHub
+				</a>
+			</div>
+
+			<small style="margin-top: 0.25rem">
+				Submitted <time datetime="2023-09-26">2023-09-26</time>
+			</small>
+		</div>
+
+		<hr />
+		<!--------------------------------------->
+
+		<main class="flex-col" style="gap: 1.5rem">
 			<header>
-				<h1>P1</h1>
-				<h3>Brage A, Brage M, Maksymilian, Malik, og Philip</h3>
-				<p>Submitted 2023-09-26</p>
+				<h2>Our client</h2>
 			</header>
 
 			<section>
-				<h2>Our client</h2>
 				<h3>Enzo Gorlomi of Papa's</h3>
 
-				<div>
-					<img
-						src="./public/assets/enzo.jpg"
-						alt="Photo of Enzo Gorlomi"
-						style="max-height: 30dvh"
-					/>
+				<div class="flex-row">
+					<div>
+						<img
+							src="./public/assets/enzo.jpg"
+							alt="Photo of Enzo Gorlomi"
+							style="max-height: 30dvh"
+						/>
 
-					<br />
+						<br />
 
-					<small>
-						<a
-							href="https://www.pexels.com/photo/thoughtful-man-in-apron-cooking-dish-on-counter-in-kitchen-6249017/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Image source
-						</a>
-					</small>
+						<small>
+							<a
+								href="https://www.pexels.com/photo/thoughtful-man-in-apron-cooking-dish-on-counter-in-kitchen-6249017/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Image source
+							</a>
+						</small>
+					</div>
+
+					<p>
+						Enzo Gorlomi is an Italian chef and owner of Papa's.
+						Enzo has transformed the world of pizza with his passion
+						and expertise.
+						<br /><br />
+						Born in Naples, Enzo's culinary journey began in his
+						grandmother's kitchen, and today, he stands as a master
+						of Neapolitan-style cuisine.
+						<br /><br />
+						With a dedication to authenticity and quality, Enzo has
+						solidified his place as a beloved figure in the world of
+						Italian cuisine.
+					</p>
 				</div>
 			</section>
 
 			<section>
 				<h4>Purpose and goals</h4>
+
 				<div class="indent">
 					<p>
-						To attract new customers and inform our current
-						customers relevant information about the restaurant.
+						The purpose and goals of Papa's is to inform new
+						customers about Papa's; what Papa's is and what Papa's
+						offers, as well as acting as a link between hungry
+						customers and the cooks.
+						<br /><br />
+						The website will show customers the rich menu and the
+						golden history, and the cozy essence of Papa's through
+						our hand-crafted design. We will have a dedicated page
+						to Papa's menu, include Enzo's and Papa's lovely and
+						rich backstory, as well as a contact form to get in
+						touch with Papa's.
 					</p>
 				</div>
 			</section>
@@ -64,11 +123,15 @@
 
 				<div class="indent">
 					<p>
-						Hungry people and families. The reason for this
-						demographic can be explained due to a customers need to
-						know the price and content of a given product provided
-						by the restaurant. Important information such as
-						allergies can also be found on such websites.
+						Papa's audience consists mainly of young adults,
+						couples, and families looking for that little extra.
+						<br /><br />
+						Users would want to find and read about menu items;
+						their history, their allergens, their ingredients, and
+						the price. Some users may want to contact Papa's; be it
+						for reserving a table for their whole family, or asking
+						for their lost jacket. Other users may want to read
+						about Papa's history and the culture surrounding it.
 					</p>
 				</div>
 			</section>
@@ -79,19 +142,75 @@
 				<div class="indent">
 					<h5>Necessary pages and features</h5>
 					<ul>
-						<li>About page</li>
-						<li>Menu page</li>
-						<li>Contact us page</li>
-						<li>Delivery time & address</li>
-						<li>Opening hours</li>
+						<li>
+							<h6>Landing page</h6>
+							<div class="indent">
+								<p>
+									The landing page will be where our users'
+									first impressions are made. Therefore, this
+									page must encapsulate the essence of Papa's
+									culinary pride.
+									<br /><br />
+									The landing page should allow for easy
+									access to the other parts of the site,
+									whilst also giving the user a glimpse of
+									what's to see (and eat). The page should
+									include images representing Papa's
+								</p>
+							</div>
+						</li>
+
+						<li>
+							<h6>Menu page</h6>
+							<div class="indent">
+								<p>
+									This will be the "main attraction" on our
+									site. It will show all menu items neatly
+									sorted so the user can swiftly find what
+									they are looking for, providing the same
+									top-notch experience as Papa's. We have not
+									set in stone how we will pursue this, but we
+									will likely use a table, a list, or a flex
+									grid.
+								</p>
+							</div>
+						</li>
+
+						<li>
+							<h6>About page</h6>
+							<div class="indent">
+								<p>
+									The about page will tell the users about
+									Papa's and Enzo and their respective
+									culinary beginnings. Enzo's biggest
+									inspiration is his grandmother, and the page
+									should capture that. The page will include
+									text and some images.
+								</p>
+							</div>
+						</li>
+
+						<li>
+							<h6>Contact us page</h6>
+							<div class="indent">
+								<p>
+									The contact us page will let the user
+									communicate with Papa's. We will use a form
+									and the mailto protocol to satisfy this
+									requirement.
+								</p>
+							</div>
+						</li>
 					</ul>
 
 					<br />
 
 					<h5>Extra</h5>
 					<ul>
-						<li>Dish info pop up</li>
-						<li>A referral function</li>
+						<li>
+							When the user clicks on a dish, an info pop-up will
+							show
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -100,35 +219,64 @@
 				<h4>Requirements</h4>
 
 				<div class="indent">
-					<h5>Functional</h5>
+					<h5>Functional requirements</h5>
 					<ul>
 						<li>
-							It should have a working contact us form that sends
-							an email
+							The site should have a working "Contact Us" form
+							that will send the restaurant management an email
 						</li>
 						<li>
-							It should inform the user about the menu options
+							The site should inform the user about the restaurant
+							menu's options via a list or a table
 						</li>
 						<li>
-							It should inform customers about the restaurants
-							opening hours
+							The site should inform customers about the
+							restaurant's opening and closing hours via a table
+						</li>
+						<li>
+							The site should make the user feel warm and welcome
+							like the restaurant does
 						</li>
 					</ul>
 
 					<br />
 
-					<h5>Non-functional</h5>
+					<h5>Non-functional requirements</h5>
 					<ul>
-						<li>The contact form should send a POST request</li>
-						<li>Conveys opening hours info using a html tables</li>
-						<li>It should display menu items as list items</li>
+						<li>
+							The user should be able to find the menu item they
+							are looking for within 15 seconds from entering the
+							website
+						</li>
+						<li>
+							The user should easily, and at a glance, be able to
+							find any allergens in any menu item
+						</li>
+						<li>
+							Every page must load in less than one second (not
+							including images)
+						</li>
 					</ul>
 				</div>
 			</section>
 
 			<section>
 				<h4>Final location</h4>
-				<p>The website will be hosted on Github pages or Vercel</p>
+				<div class="indent">
+					<p>
+						The website will be hosted on Github pages at
+						<a
+							href="https://brage-andreas.github.io/webtek-gruppe-13/Documents/P1_requirements_13.html"
+							target="_blank"
+							>this URL for P1</a
+						>
+						(<a
+							href="https://brage-andreas.github.io/webtek-gruppe-13/"
+							target="_blank"
+							>link to portal</a
+						>)
+					</p>
+				</div>
 			</section>
 		</main>
 	</body>
