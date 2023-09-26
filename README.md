@@ -1,5 +1,6 @@
 # Webtek Gruppe 13
 
+### Hosted on [Github Pages](https://brage-andreas.github.io/webtek-gruppe-13/) and [NTNU](https://folk.ntnu.no/philipbk/webtek-gruppe-13/)
 Blackboard: [Gruppe 13](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1) • [Webtek](https://ntnu.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_43546_1&group_id=_607042_1)
 
 ---
@@ -7,8 +8,6 @@ Blackboard: [Gruppe 13](https://ntnu.blackboard.com/webapps/blackboard/execute/m
 ## Oppgaver
 
 [Oversikt og innlevering](https://ntnu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_43546_1&content_id=_2148021_1&mode=reset")
-
-<br />
 
 | Prosjekt                                                                                                                                               | % av karakter | Frist   | Ferdig |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | :-----------: | ------- | :----: |
