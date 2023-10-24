@@ -1,0 +1,115 @@
+/* Kevin Powell's CSS reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html {
+	color-scheme: light;
+	font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	min-height: 100dvh;
+	padding: 2.5dvh 0 2.5dvh 0;
+}
+
+/* -------- */
+
+:root {
+	--light-grey: 230, 229, 224;
+}
+
+main {
+	max-width: 70ch;
+	margin: 1rem auto 1rem auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-bottom: 0.5ch;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+ol > li,
+ul > li {
+	margin-left: 4ch;
+}
+
+p {
+	font-size: 1rem;
+}
+
+small {
+	font-size: 0.75rem;
+}
+
+.pre-layout {
+	min-width: 70ch;
+	width: 50dvw;
+	margin: 0 auto 1rem auto;
+}
+
+a.button {
+	background-color: rgb(var(--light-grey));
+	border-radius: 0.25rem;
+	color: black;
+	padding: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.indent {
+	position: relative;
+	margin-left: 2ch;
+}
+
+.indent:before {
+	content: "";
+	position: absolute;
+	left: -2ch;
+	top: 2.5%;
+	height: 95%;
+	width: 2px;
+	border-left: 2px solid rgb(var(--light-grey));
+}
+
+.indent .indent:before {
+	border-left: 2px solid rgba(var(--light-grey), 0.66);
+}
