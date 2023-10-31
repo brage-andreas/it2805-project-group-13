@@ -92,24 +92,12 @@ const data = {
 };
 
 function createMenuItem(item) {
+	// Initialize menu item
 	const elementMenuItem = document.createElement("div");
 	elementMenuItem.classList.add("menu-item");
 
-	const elementName = document.createElement("h3");
-	elementName.textContent = item.name;
-
-	const elementPrice = document.createElement("p");
-	elementPrice.textContent = item.price + " €";
-
-	const elementDescription = document.createElement("p");
-	elementDescription.textContent = item.description;
-
-	const elementIngredients = document.createElement("p");
-	elementIngredients.textContent =
-		"Ingredients: " + item.ingredients?.join(", ");
-
-	const elementFigure = document.createElement("figure");
 	{
+		const elementFigure = document.createElement("figure");
 		const elementImage = document.createElement("img");
 		elementImage.src = item.src;
 
@@ -118,13 +106,29 @@ function createMenuItem(item) {
 
 		elementFigure.appendChild(elementImage);
 		elementFigure.appendChild(elementCredit);
+
+		elementMenuItem.appendChild(elementFigure);
 	}
 
-	elementMenuItem.appendChild(elementFigure);
+	const elementName = document.createElement("h3");
+	elementName.textContent = item.name;
 	elementMenuItem.appendChild(elementName);
+
+	const elementPrice = document.createElement("p");
+	elementPrice.textContent = item.price + " €";
 	elementMenuItem.appendChild(elementPrice);
+
+	const elementDescription = document.createElement("p");
+	elementDescription.textContent = item.description;
 	elementMenuItem.appendChild(elementDescription);
-	elementMenuItem.appendChild(elementIngredients);
+
+	if (item.ingredients) {
+		const elementIngredients = document.createElement("p");
+		elementIngredients.textContent =
+			"Ingredients: " + item.ingredients?.join(", ");
+		elementMenuItem.appendChild(elementIngredients);
+	}
+
 	return elementMenuItem;
 }
 
