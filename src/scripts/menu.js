@@ -65,3 +65,20 @@ const data = {
 		}
 	]
 };
+
+function createMenuItem(item) {
+	const elementMenuItem = document.createElement("div");
+	elementMenuItem.classList.add("menu-item");
+
+	const elementName = document.createElement("h3");
+	elementName.textContent = item.name;
+
+	const elementPrice = document.createElement("p");
+	elementPrice.textContent = item.price;
+
+	elementMenuItem.appendChild(elementName);
+	elementMenuItem.appendChild(elementPrice);
+
+	return elementMenuItem;
+}
+
