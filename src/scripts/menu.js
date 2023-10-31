@@ -82,3 +82,41 @@ function createMenuItem(item) {
 	return elementMenuItem;
 }
 
+// Main starts here
+
+const elementMain = document.querySelector("main");
+
+// Create menu
+const elementMenu = document.createElement("div");
+{
+	elementMenu.classList.add("menu");
+
+	// Create list for every category
+	const categories = data.items.map((item) => item.category);
+	const uniqueCategories = [...new Set(categories)];
+
+	const menuContents = uniqueCategories.map((category) => {
+		const elementMenuCategory = document.createElement("div");
+		elementMenuCategory.classList.add("menu-category");
+
+		const elementCategoryName = document.createElement("h2");
+		elementCategoryName.textContent = category;
+
+		const menuItems = data.items
+			.filter((item) => item.category === category)
+			.map(createMenuItem);
+
+		elementMenuCategory.appendChild(elementCategoryName);
+		menuItems.forEach((menuItem) =>
+			elementMenuCategory.appendChild(menuItem)
+		);
+
+		return elementMenuCategory;
+	});
+
+	// Add menu contents to menu
+	elementMenu.append(...menuContents);
+}
+
+// Add menu to main
+elementMain.appendChild(elementMenu);
