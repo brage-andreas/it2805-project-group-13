@@ -88,7 +88,7 @@ function createMenuItem(item) {
 		const elementImage = document.createElement("img");
 		elementImage.src = item.src;
 
-		const elementCredit = document.createElement("i");
+		const elementCredit = document.createElement("small");
 		elementCredit.textContent = item.credit;
 
 		elementFigure.appendChild(elementImage);
