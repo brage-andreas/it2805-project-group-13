@@ -74,11 +74,32 @@ function createMenuItem(item) {
 	elementName.textContent = item.name;
 
 	const elementPrice = document.createElement("p");
-	elementPrice.textContent = item.price;
+	elementPrice.textContent = item.price + " €";
 
+	const elementDescription = document.createElement("p");
+	elementDescription.textContent = item.description;
+
+	const elementIngredients = document.createElement("p");
+	elementIngredients.textContent =
+		"Ingredients: " + item.ingredients?.join(", ");
+
+	const elementFigure = document.createElement("figure");
+	{
+		const elementImage = document.createElement("img");
+		elementImage.src = item.src;
+
+		const elementCredit = document.createElement("i");
+		elementCredit.textContent = item.credit;
+
+		elementFigure.appendChild(elementImage);
+		elementFigure.appendChild(elementCredit);
+	}
+
+	elementMenuItem.appendChild(elementFigure);
 	elementMenuItem.appendChild(elementName);
 	elementMenuItem.appendChild(elementPrice);
-
+	elementMenuItem.appendChild(elementDescription);
+	elementMenuItem.appendChild(elementIngredients);
 	return elementMenuItem;
 }
 
