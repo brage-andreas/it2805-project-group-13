@@ -1,0 +1,27 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-category {
+	display: flex;
+	flex-wrap: wrap;
+	& h2 {
+		flex-basis: 100%;
+	}
+}
+
+.menu-item {
+	flex-basis: 50%;
+
+	& figure {
+		width: 250px;
+	}
+	& img {
+		width: 100%;
+		aspect-ratio: 1/1;
+	}
+	& i {
+		font-size: 0.75rem;
+	}
+}
