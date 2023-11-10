@@ -20,9 +20,12 @@ function createNavButton(label, icon, href) {
 function createHeader() {
 	const header = document.createElement("header");
 
-	header.classList.add("flex-row");
+	header.classList.add("flex-column");
 	header.style.justifyContent = "space-between";
 	header.style.alignItems = "center";
+
+	const headerDiv = document.createElement("div");
+	headerDiv.classList.add("flex-row");
 
 	const brandingDiv = document.createElement("div");
 
@@ -50,9 +53,14 @@ function createHeader() {
 	const aboutButton = createNavButton("About us", "users", "#");
 	const contactButton = createNavButton("Contact us", "paper-plane", "#");
 
+	const pillDivPlaceholder = document.createElement("div");
+	pillDivPlaceholder.id = "pill-div-placeholder";
+
 	brandingDiv.append(logo, title);
 	nav.append(homeButton, menuButton, orderButton, aboutButton, contactButton);
-	header.append(brandingDiv, nav);
+
+	headerDiv.append(brandingDiv, nav);
+	header.append(headerDiv, pillDivPlaceholder);
 
 	return header;
 }
