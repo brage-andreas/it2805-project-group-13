@@ -4,10 +4,6 @@ header {
 	width: 100dvw;
 }
 
-header div.flex-row {
-	justify-content: space-between;
-}
-
 header h1 {
 	font-family: "Berkshire Swash", var(--base-font-family);
 }
@@ -27,14 +23,37 @@ header nav a.flex-row {
 	gap: 1.5ch;
 }
 
-.info-pill {
-	justify-content: flex-end;
+#header-main-row {
+	justify-content: space-between;
 }
 
-.info-pill-content {
-	background-color: var(--base-green);
+.info-pill-container {
+	float: right;
+}
+
+.info-pill {
+	background-color: var(--header-background-color);
 	border-radius: 0.5rem;
+	align-items: center;
 	padding: 0.5rem 1rem;
-	color: var(--white);
 	width: fit-content;
+}
+
+.pill-separator::after,
+.pill-element-indicator-green::after,
+.pill-element-indicator-red::after {
+	line-height: 0;
+	transform: translate(-50%, -50%) scale(1.75);
+	position: absolute;
+	content: "•";
+}
+
+.pill-element-indicator-green::after {
+	transform: scale(2.5);
+	color: var(--base-green);
+}
+
+.pill-element-indicator-red::after {
+	transform: scale(2.5);
+	color: var(--red);
 }
