@@ -1,0 +1,59 @@
+header {
+	background-color: var(--header-background-color);
+	padding: 1.25dvh 20dvw;
+	width: 100dvw;
+}
+
+header h1 {
+	font-family: "Berkshire Swash", var(--base-font-family);
+}
+
+header nav a {
+	background-color: var(--base-green);
+	transition: var(--default-transition);
+	color: var(--white);
+}
+
+header nav a:hover {
+	background-color: var(--darker-green);
+}
+
+header nav a.flex-row {
+	align-items: center;
+	gap: 1.5ch;
+}
+
+#header-main-row {
+	justify-content: space-between;
+}
+
+.info-pill-container {
+	float: right;
+}
+
+.info-pill {
+	background-color: var(--header-background-color);
+	border-radius: 0.5rem;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	width: fit-content;
+}
+
+.pill-separator::after,
+.pill-element-indicator-green::after,
+.pill-element-indicator-red::after {
+	line-height: 0;
+	transform: translate(-50%, -50%) scale(1.75);
+	position: absolute;
+	content: "•";
+}
+
+.pill-element-indicator-green::after {
+	transform: scale(2.5);
+	color: var(--base-green);
+}
+
+.pill-element-indicator-red::after {
+	transform: scale(2.5);
+	color: var(--red);
+}
