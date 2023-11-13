@@ -1,28 +1,69 @@
-const headerTemplate = document.createElement("template");
+const elementHeader = document.querySelector("header");
 
-headerTemplate.innerHTML = `
-	<link rel="stylesheet" href="../style/global.css">
-
-	<header style="width: 100dvw; margin: 0">
-		<div style="width: 100%; display: flex; flex-direction: row">
-			<a href="http://google.com" target="_blank" rel="noopener noreferrer">
-				<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%; margin: 10px">
-				<h1>My Website</h1>
-			</a>
-		</div>
-	</header>
-`;
-
-class Header extends HTMLElement {
-	constructor() {
-		super();
-	}
-
-	connectedCallback() {
-		const shadowRoot = this.attachShadow({ mode: "open" });
-
-		shadowRoot.appendChild(headerTemplate.content);
-	}
+if (elementHeader === null) {
+	throw new Error("No header found!");
 }
 
-customElements.define("papas-header", Header);
+function createNavButton(label, icon, href) {
+	const button = document.createElement("a");
+
+	button.classList.add("button", "flex-row");
+	button.href = href;
+	button.innerHTML = `
+		<i class="fa-solid fa-${icon}"></i>
+		${label}
+	`;
+
+	return button;
+}
+
+function createHeader() {
+	const header = document.createElement("header");
+
+	header.classList.add("flex-column");
+	header.style.justifyContent = "space-between";
+	header.style.alignItems = "center";
+
+	const headerDiv = document.createElement("div");
+	headerDiv.classList.add("flex-row");
+	headerDiv.id = "header-main-row";
+
+	const brandingDiv = document.createElement("div");
+
+	brandingDiv.classList.add("flex-row");
+	brandingDiv.style.alignItems = "center";
+
+	const logo = document.createElement("img");
+
+	logo.src = "public/papas-logo.png";
+	logo.alt = "Logo of Papa's";
+	logo.style.maxHeight = "3rem";
+
+	const title = document.createElement("h1");
+
+	title.textContent = "Papa's";
+
+	const nav = document.createElement("nav");
+
+	nav.classList.add("flex-row");
+	nav.style.alignItems = "center";
+
+	const homeButton = createNavButton("Home", "house-chimney", "#");
+	const menuButton = createNavButton("Our menu", "wine-bottle", "#");
+	const orderButton = createNavButton("Order now", "bell-concierge", "#");
+	const aboutButton = createNavButton("About us", "users", "#");
+	const contactButton = createNavButton("Contact us", "paper-plane", "#");
+
+	const pillDivPlaceholder = document.createElement("div");
+	pillDivPlaceholder.id = "pill-div-placeholder";
+
+	brandingDiv.append(logo, title);
+	nav.append(homeButton, menuButton, orderButton, aboutButton, contactButton);
+
+	headerDiv.append(brandingDiv, nav);
+	header.append(headerDiv, pillDivPlaceholder);
+
+	return header;
+}
+
+elementHeader.replaceWith(createHeader());

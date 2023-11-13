@@ -8,6 +8,7 @@
 	--light-grey: #e6e5e0;
 	--black: #260101;
 	--white: #ffffff;
+	--red: #ef4444;
 }
 
 /* Kevin Powell's CSS reset */
@@ -98,29 +99,4 @@ small {
 	flex-direction: column;
 	display: flex;
 	gap: 0.25rem;
-}
-
-header {
-	background-color: var(--header-background-color);
-	padding: 1.25dvh 20dvw;
-	width: 100dvw;
-}
-
-header h1 {
-	font-family: "Berkshire Swash", var(--base-font-family);
-}
-
-header nav a {
-	background-color: var(--base-green);
-	transition: var(--default-transition);
-	color: var(--white);
-}
-
-header nav a:hover {
-	background-color: var(--darker-green);
-}
-
-header nav a.flex-row {
-	align-items: center;
-	gap: 1.5ch;
 }
