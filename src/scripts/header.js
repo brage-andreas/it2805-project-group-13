@@ -48,11 +48,21 @@ function createHeader() {
 	nav.classList.add("flex-row");
 	nav.style.alignItems = "center";
 
-	const homeButton = createNavButton("Home", "house-chimney", "#");
-	const menuButton = createNavButton("Our menu", "wine-bottle", "#");
-	const orderButton = createNavButton("Order now", "bell-concierge", "#");
-	const aboutButton = createNavButton("About us", "users", "#");
-	const contactButton = createNavButton("Contact us", "paper-plane", "#");
+	const homeButton = createNavButton("Home", "house-chimney", "index.html");
+	const menuButton = createNavButton("Our menu", "wine-bottle", "menu.html");
+	const aboutButton = createNavButton("About us", "users", "about.html");
+
+	const orderButton = createNavButton(
+		"Order now",
+		"bell-concierge",
+		"order.html"
+	);
+
+	const contactButton = createNavButton(
+		"Contact us",
+		"paper-plane",
+		"contact.html"
+	);
 
 	const pillDivPlaceholder = document.createElement("div");
 	pillDivPlaceholder.id = "pill-div-placeholder";
