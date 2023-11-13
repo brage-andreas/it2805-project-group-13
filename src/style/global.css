@@ -31,14 +31,16 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	min-height: 100dvh;
-	background-color: var(--background-color);
+	background-color: var(--header-background-color);
 }
 /* ------------------------ */
 
 main {
-	max-width: 70ch;
-	margin: 1rem auto;
+	flex-grow: 1;
+	background-color: #fae2b7;
 }
 
 h1,
@@ -101,4 +103,9 @@ small {
 	flex-direction: column;
 	display: flex;
 	gap: 0.25rem;
+}
+
+#main {
+	width: 70ch;
+	margin: 3rem auto;
 }

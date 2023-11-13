@@ -16,10 +16,6 @@
 	width: 100%;
 }
 
-main {
-	width: 80dvh;
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
