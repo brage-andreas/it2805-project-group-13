@@ -1,3 +1,9 @@
+const SeparatorStyle = {
+	DEFAULT: 0,
+	GREEN: 1,
+	RED: 2
+};
+
 const OPENING_HOUR = 14;
 const CLOSING_HOUR = 21;
 
@@ -22,7 +28,7 @@ function getNextOpenDay() {
 	const isMonday = currentDate.getDay() === MONDAY;
 	const daysToAdd = isMonday ? 2 : 1;
 
-	currentDate.setDate(day + daysToAdd);
+	currentDate.setDate(currentDate.getDate() + daysToAdd);
 	currentDate.setHours(OPENING_HOUR, 0, 0, 0);
 
 	return currentDate;
@@ -36,50 +42,79 @@ function getAvailableTables(max = 8) {
 		return 0;
 	}
 
-	return Math.round(max / (Math.random() * max));
+	return Math.round(max / (Math.random() * max + 1));
+}
+
+function separator() {
+	const separator = document.createElement("span");
+	separator.classList.add("pill-separator");
+
+	return separator;
 }
 
 function createOpenInfoPill(innerDiv) {
-	const openState = document.createElement("p");
+	const indicator = document.createElement("span");
+	indicator.classList.add("pill-element-indicator-green");
+
+	const openState = document.createElement("span");
+	openState.classList.add("pill-first-element");
 	openState.textContent = "Open";
 
-	const closesAt = document.createElement("p");
+	const closesAt = document.createElement("span");
 	closesAt.textContent = `Closes ${CLOSING_HOUR}:00`;
 
-	const availableTables = document.createElement("p");
-	availableTables.textContent = `${getAvailableTables()} tables available`;
+	const tables = getAvailableTables();
+	const tablesPlural = tables === 1 ? "" : "s";
 
-	innerDiv.append(openState, closesAt, availableTables);
+	const availableTables = document.createElement("span");
+	availableTables.innerHTML = `<span style="font-weight: bold">${tables}</span> table${tablesPlural} available`;
+
+	innerDiv.append(
+		indicator,
+		openState,
+		separator(),
+		closesAt,
+		separator(),
+		availableTables
+	);
 
 	return innerDiv;
 }
 
 function createClosedInfoPill(innerDiv) {
-	const closedState = document.createElement("p");
+	const indicator = document.createElement("span");
+	indicator.classList.add("pill-element-indicator-red");
+
+	const closedState = document.createElement("span");
 	closedState.textContent = "Closed now";
 
 	const openingDate = getNextOpenDay();
-	const openingDay = openingDate.toLocaleDateString("en-US", {
-		weekday: "long"
-	});
 
-	const opensAt = document.createElement("p");
-	opensAt.innerHTML = `Opens <strong>${openingDay} ${OPENING_HOUR}:00</strong>`;
+	const options = {
+		weekday: "long",
+		year: "numeric",
+		month: "2-digit",
+		day: "2-digit"
+	};
 
-	const nextOpenDay = document.createElement("p");
-	nextOpenDay.textContent = `Next open day: ${getNextOpenDay().toLocaleDateString()}`;
+	const openingDay = openingDate
+		.toLocaleDateString("en-UK", options)
+		.replace(/(\w+), \d{2}\/\d{2}\/\d{4}/, "$1");
 
-	innerDiv.append(closedState, opensAt, nextOpenDay);
+	const opensAt = document.createElement("span");
+	opensAt.innerHTML = `Opens <span style="font-weight: bold">${openingDay} ${OPENING_HOUR}:00</span>`;
+
+	innerDiv.append(indicator, closedState, separator(), opensAt);
 
 	return innerDiv;
 }
 
 function createInfoPill() {
 	const outerDiv = document.createElement("div");
-	outerDiv.classList.add("flex-row", "info-pill");
+	outerDiv.classList.add("flex-row", "info-pill-container");
 
 	const innerDiv = document.createElement("div");
-	innerDiv.classList.add("flex-row", "info-pill-content");
+	innerDiv.classList.add("flex-row", "info-pill");
 
 	if (isOpen()) {
 		outerDiv.append(createOpenInfoPill(innerDiv));
