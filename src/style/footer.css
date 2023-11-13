@@ -1,7 +1,25 @@
 footer {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	width: 100dvw;
+	height: 5rem;
+
+	& ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 1ch;
+		height: 100%;
+	}
+	& a {
+		text-decoration: none;
+		color: brown;
+	}
+	& a:hover {
+		text-decoration: underline;
+	}
 }
