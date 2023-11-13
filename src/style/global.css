@@ -9,6 +9,7 @@
 	--black: #260101;
 	--white: #ffffff;
 	--red: #ef4444;
+	--background-color: #fae2b7;
 }
 
 /* Kevin Powell's CSS reset */
@@ -31,6 +32,7 @@ html {
 
 body {
 	min-height: 100dvh;
+	background-color: var(--background-color);
 }
 /* ------------------------ */
 
