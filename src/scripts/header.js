@@ -26,6 +26,7 @@ function createHeader() {
 
 	const headerDiv = document.createElement("div");
 	headerDiv.classList.add("flex-row");
+	headerDiv.id = "header-main-row";
 
 	const brandingDiv = document.createElement("div");
 
