@@ -1,0 +1,104 @@
+:root {
+	--header-background-color: #ffcc66;
+	--default-border-radius: 0.3rem;
+	--default-transition: all 0.125s ease-in-out;
+	--base-font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
+	--darker-green: #466f4d;
+	--base-green: #548c5d;
+	--light-grey: #e6e5e0;
+	--black: #260101;
+	--white: #ffffff;
+	--red: #ef4444;
+	--background-color: #fae2b7;
+}
+
+/* Kevin Powell's CSS reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font: inherit;
+}
+
+html {
+	color-scheme: light;
+	font-family: var(--base-font-family);
+}
+
+body {
+	min-height: 100dvh;
+	background-color: var(--background-color);
+}
+/* ------------------------ */
+
+main {
+	max-width: 70ch;
+	margin: 1rem auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-bottom: 0.5ch;
+}
+
+h1 {
+	font-family: "Jolly Lodger", var(--base-font-family);
+	font-size: 3rem;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+ol > li,
+ul > li {
+	margin-left: 4ch;
+}
+
+p {
+	font-size: 1rem;
+}
+
+small {
+	font-size: 0.75rem;
+}
+
+.pre-layout {
+	min-width: 70ch;
+	margin: 0 auto 1rem auto;
+	width: 50dvw;
+}
+
+.button {
+	text-decoration: none;
+	border-radius: var(--default-border-radius);
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+.flex-row {
+	flex-direction: row;
+	display: flex;
+	gap: 1rem;
+}
+
+.flex-col {
+	flex-direction: column;
+	display: flex;
+	gap: 0.25rem;
+}
