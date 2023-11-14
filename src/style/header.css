@@ -28,7 +28,10 @@ header nav a.flex-row {
 }
 
 .info-pill-container {
-	float: right;
+	display: flex;
+	justify-content: end;
+	position: relative;
+	top: 2.25rem;
 }
 
 .info-pill {
