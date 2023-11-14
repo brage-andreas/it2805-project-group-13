@@ -37,6 +37,7 @@ body {
 /* ------------------------ */
 
 main {
+	min-height: 75dvh;
 	max-width: 70ch;
 	margin: 1rem auto;
 }
