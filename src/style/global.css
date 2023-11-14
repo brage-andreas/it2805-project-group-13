@@ -39,8 +39,9 @@ body {
 /* ------------------------ */
 
 main {
-	flex-grow: 1;
 	background-color: #fae2b7;
+	min-height: 75dvh;
+	max-width: 70ch;
 }
 
 h1,
