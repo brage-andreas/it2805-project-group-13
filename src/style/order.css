@@ -1,40 +1,45 @@
-main {
+label,
+input {
 	font-size: 1.5em;
-	background-color: #fae2b7;
 }
 
-main input {
+input {
 	height: 2em;
 	min-width: 40ch;
 	border-radius: 1em;
 	border-style: solid;
-	border-color: black;
+	border-color: var(--black);
 	border-width: 2px;
 }
-main button[type="submit"] {
-	font-size: 12px;
+
+button[type="submit"] {
+	font-size: 0.75rem;
 	padding: 0.6em 3em;
 	margin: 0.25em;
 	border-radius: 1em;
-	color: white;
-	background-color: #548c5d;
+	color: var(--white);
+	background-color: var(--base-green);
 	cursor: pointer;
 }
-main button[type="button"] {
-	font-size: 12px;
+
+button[type="button"] {
+	font-size: 0.75rem;
 	padding: 0.6em 3em;
 	margin: 0.25em;
 	border-radius: 1em;
-	color: white;
-	background-color: red;
+	color: var(--white);
+	background-color: var(--red);
 	cursor: pointer;
 }
-main #buttons {
+
+#buttons {
 	display: flex;
 }
-main button[type="button"]:hover {
-	background-color: darkred;
+
+button[type="button"]:hover {
+	background-color: var(--darker-red);
 }
-main button[type="submit"]:hover {
-	background-color: darkgreen;
+
+button[type="submit"]:hover {
+	background-color: var(--darker-green);
 }
