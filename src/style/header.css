@@ -1,7 +1,7 @@
 header {
 	background-color: var(--header-background-color);
-	padding: 1.25dvh 20dvw;
-	width: 100dvw;
+	padding: 1.25dvh 15dvw;
+	width: 100%;
 }
 
 header h1 {
@@ -11,6 +11,7 @@ header h1 {
 header nav a {
 	background-color: var(--base-green);
 	transition: var(--default-transition);
+	font-size: 0.875rem;
 	color: var(--white);
 }
 
@@ -20,7 +21,7 @@ header nav a:hover {
 
 header nav a.flex-row {
 	align-items: center;
-	gap: 1.5ch;
+	gap: 1ch;
 }
 
 #header-main-row {
@@ -28,10 +29,8 @@ header nav a.flex-row {
 }
 
 .info-pill-container {
-	display: flex;
-	justify-content: end;
-	position: relative;
-	top: 2.25rem;
+	position: absolute;
+	right: 15dvw;
 }
 
 .info-pill {
