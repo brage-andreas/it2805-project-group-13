@@ -2,6 +2,7 @@
 	--header-background-color: #ffcc66;
 	--default-border-radius: 0.3rem;
 	--default-transition: all 0.125s ease-in-out;
+	--background-color: #fae2b7;
 	--base-font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
 	--darker-green: #466f4d;
 	--base-green: #548c5d;
@@ -10,7 +11,6 @@
 	--black: #260101;
 	--white: #ffffff;
 	--red: #ef4444;
-	--background-color: #fae2b7;
 }
 
 /* Kevin Powell's CSS reset */
@@ -32,16 +32,23 @@ html {
 }
 
 body {
-	display: flex;
+	background-color: var(--background-color);
 	flex-direction: column;
 	min-height: 100dvh;
-	background-color: var(--header-background-color);
+	display: flex;
+	width: 100dvw;
 }
 /* ------------------------ */
 
-main {
+div#page {
 	flex-grow: 1;
-	background-color: #fae2b7;
+	display: flex;
+	width: 100%;
+}
+
+main {
+	margin: 3rem auto;
+	width: 70ch;
 }
 
 h1,
@@ -104,9 +111,4 @@ small {
 	flex-direction: column;
 	display: flex;
 	gap: 0.25rem;
-}
-
-#main {
-	width: 70ch;
-	margin: 3rem auto;
 }
