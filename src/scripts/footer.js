@@ -48,8 +48,8 @@ function createFooter() {
 	const siteMapColumn2 = document.createElement("div");
 	siteMapColumn1.classList.add("flex-col");
 	siteMapColumn2.classList.add("flex-col");
-	siteMapColumn1.append(...sites.slice(0, 2));
-	siteMapColumn2.append(...sites.slice(2, 4));
+	siteMapColumn1.append(...sites.slice(0, 3));
+	siteMapColumn2.append(...sites.slice(3, 5));
 
 	const contactColumn = document.createElement("div");
 	contactColumn.classList.add("flex-col");
