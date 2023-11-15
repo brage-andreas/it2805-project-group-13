@@ -34,18 +34,21 @@
 	font-family: "Berkshire Swash";
 }
 
+#refs {
+	justify-content: center;
+	flex-direction: row;
+	font-weight: bold;
+	font-size: 1.25rem;
+	display: flex;
+	color: var(--header-background-color);
+	gap: 3.5rem;
+}
+
 .undertitle {
 	font-weight: normal;
 	margin-top: 4.5rem;
 	text-align: center;
 	font-size: 1.75rem;
-}
-
-#refs {
-	flex-direction: row;
-	font-weight: bold;
-	font-size: 1.25rem;
-	color: var(--header-background-color);
 }
 
 .container a:link {
