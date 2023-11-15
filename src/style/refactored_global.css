@@ -2,11 +2,19 @@
 	--header-background-color: #ffcc66;
 	--card-background-color: #fdd78f;
 	--default-border-radius: 0.3rem;
+	--heading-margin-bottom: 0.5ch;
+	--list-item-margin-left: 4ch;
 	--bigger-border-radius: 1rem;
+	--paragraph-font-size: 1rem;
 	--default-transition: all 0.125s ease-in-out;
 	--background-color: #fae2b7;
 	--base-font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
+	--small-font-size: 0.75rem;
 	--darker-green: #466f4d;
+	--h1-font-size: 3rem;
+	--h2-font-size: 1.75rem;
+	--h3-font-size: 1.5rem;
+	--h4-font-size: 1.25rem;
 	--base-green: #548c5d;
 	--darker-red: #cc3939;
 	--light-grey: #e6e5e0;
@@ -57,33 +65,38 @@ h1,
 h2,
 h3,
 h4 {
-	margin-bottom: 0.5ch;
+	margin-bottom: var(--heading-margin-bottom);
 }
 
 h1 {
 	font-family: "Jolly Lodger", var(--base-font-family);
-	font-size: 3rem;
+	font-size: var(--h1-font-size);
 }
 
 h2 {
 	font-weight: bold;
-	font-size: 1.75rem;
+	font-size: var(--h2-font-size);
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: var(--h3-font-size);
 }
 
 h4 {
-	font-size: 1.25rem;
+	font-size: var(--h4-font-size);
+}
+
+ol > li,
+ul > li {
+	margin-left: var(--list-item-margin-left);
 }
 
 p {
-	font-size: 1rem;
+	font-size: var(--paragraph-font-size);
 }
 
 small {
-	font-size: 0.75rem;
+	font-size: var(--small-font-size);
 }
 
 .pre-layout {
@@ -149,7 +162,7 @@ footer {
 	width: 100%;
 }
 
-button[type="ordernow"] {
+#order-now-button {
 	margin-top: 30px;
 	font-size: 0.75rem;
 	padding: 0.6em 3em;
@@ -159,7 +172,7 @@ button[type="ordernow"] {
 	cursor: pointer;
 }
 
-.ordernow {
+.order-now {
 	align-content: center;
 	flex-wrap: wrap;
 	height: auto;
@@ -167,7 +180,7 @@ button[type="ordernow"] {
 	padding-top: 20px;
 }
 
-.ordernow p:nth-child(2) {
+.order-now p:nth-child(2) {
 	padding-top: 20px;
 }
 
@@ -495,7 +508,7 @@ button[type="ordernow"] {
 	cursor: pointer;
 }
 
-.ordernow {
+.order-now {
 	align-content: center;
 	flex-wrap: wrap;
 	height: auto;
@@ -503,7 +516,7 @@ button[type="ordernow"] {
 	padding-top: 20px;
 }
 
-.ordernow p:nth-child(2) {
+.order-now p:nth-child(2) {
 	padding-top: 20px;
 }
 
