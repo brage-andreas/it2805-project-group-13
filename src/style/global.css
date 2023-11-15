@@ -1,6 +1,8 @@
 :root {
 	--header-background-color: #ffcc66;
+	--card-background-color: #fdd78f;
 	--default-border-radius: 0.3rem;
+	--bigger-border-radius: 1rem;
 	--default-transition: all 0.125s ease-in-out;
 	--background-color: #fae2b7;
 	--base-font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
