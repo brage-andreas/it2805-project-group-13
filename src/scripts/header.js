@@ -20,9 +20,11 @@ function createNavButton(label, icon, href) {
 function createHeader() {
 	const header = document.createElement("header");
 
-	header.classList.add("flex-column");
-	header.style.justifyContent = "space-between";
-	header.style.alignItems = "center";
+	const headerBoxDiv = document.createElement("div");
+
+	headerBoxDiv.classList.add("flex-column");
+	headerBoxDiv.style.justifyContent = "space-between";
+	headerBoxDiv.style.alignItems = "center";
 
 	const headerDiv = document.createElement("div");
 	headerDiv.classList.add("flex-row");
@@ -47,6 +49,7 @@ function createHeader() {
 
 	nav.classList.add("flex-row");
 	nav.style.alignItems = "center";
+	nav.style.flexWrap = "wrap";
 
 	const homeButton = createNavButton("Home", "house-chimney", "index.html");
 	const menuButton = createNavButton("Our menu", "wine-bottle", "menu.html");
@@ -71,7 +74,9 @@ function createHeader() {
 	nav.append(homeButton, menuButton, orderButton, aboutButton, contactButton);
 
 	headerDiv.append(brandingDiv, nav);
-	header.append(headerDiv, pillDivPlaceholder);
+	headerBoxDiv.append(headerDiv);
+
+	header.append(headerBoxDiv, pillDivPlaceholder);
 
 	return header;
 }
