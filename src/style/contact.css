@@ -25,12 +25,8 @@
 	font-size: 25px;
 }
 
-img {
-	float: right;
-	height: 100px;
-}
-
 .svg {
+	color: black;
 	float: right;
 	min-width: 100px;
 	min-height: 100px;

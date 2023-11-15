@@ -113,3 +113,181 @@ small {
 	display: flex;
 	gap: 0.25rem;
 }
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100dvw;
+}
+
+.menu {
+	flex-direction: column;
+	display: flex;
+	margin: 1rem auto;
+	gap: 1rem;
+}
+
+.menu-category {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.menu-category h2 {
+	flex-basis: 100%;
+}
+
+.menu-item {
+	flex-basis: 47%;
+}
+
+.menu-item figure {
+	width: 100%;
+}
+
+.menu-item img {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 100%;
+}
+
+button[type="ordernow"] {
+	margin-top: 30px;
+	font-size: 0.75rem;
+	padding: 0.6em 3em;
+	border-radius: 1em;
+	color: var(--white);
+	background-color: var(--base-green);
+	cursor: pointer;
+}
+
+.ordernow {
+	align-content: center;
+	flex-wrap: wrap;
+	height: auto;
+	gap: 0px;
+	padding-top: 20px;
+}
+
+.ordernow p:nth-child(2) {
+	padding-top: 20px;
+}
+
+#lasagna {
+	margin-top: 20px;
+	float: right;
+	max-width: 280px;
+	max-height: auto;
+}
+
+#background_image {
+	background-repeat: no-repeat;
+	background-image: url("../assets/images/homepage/background_image_homepage.png");
+	background-size: cover;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	height: 90dvh;
+	width: 100dvw;
+}
+
+.container {
+	align-content: center;
+	flex-wrap: wrap;
+	height: auto;
+	color: var(--white);
+	gap: 0px;
+}
+
+.header {
+	margin-bottom: -2rem;
+	font-family: "Jolly lodger";
+	font-weight: 500;
+	font-size: 11rem;
+}
+
+#greetings {
+	text-align: center;
+	font-size: 3.75rem;
+}
+
+#logo {
+	font-family: "Berkshire Swash";
+}
+
+.undertitle {
+	font-weight: normal;
+	margin-top: 4.5rem;
+	text-align: center;
+	font-size: 1.75rem;
+}
+
+#refs {
+	flex-direction: row;
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: var(--header-background-color);
+}
+
+#refs a {
+	padding-left: 30px;
+}
+
+.container a:link {
+	text-decoration: none;
+	color: var(--header-background-color);
+}
+
+.container a:visited {
+	text-decoration: none;
+	color: var(--header-background-color);
+}
+
+.container a:hover {
+	text-decoration: underline;
+}
+
+.container a:active {
+	color: black;
+}
+
+.title { 
+	font-family: "Jolly lodger";
+	color: #260101;
+	font-size: 6rem;
+	font-weight: bold;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.box {
+	border-radius: 1.5rem;
+	background-color: #fdd78f;
+	padding-left: 1rem;
+	padding-right: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.text-container {
+	color: #260101;
+	padding-left: 1rem;
+	font-family: "Lexend";
+	font-size: 3rem;
+}
+
+.svg {
+	color: black;
+	float: right;
+	min-width: 100px;
+	min-height: 100px;
+}
