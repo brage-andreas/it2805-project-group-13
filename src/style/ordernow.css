@@ -1,4 +1,4 @@
-/*button[type="ordernow"] {
+button[type="ordernow"] {
 	margin-top: 30px;
 	font-size: 0.75rem;
 	padding: 0.6em 3em;
@@ -24,5 +24,4 @@
 	margin-top: 20px;
 	float: right;
 	max-width: 280px;
-	max-height: auto;
 }
