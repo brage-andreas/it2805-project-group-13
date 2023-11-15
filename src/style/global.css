@@ -131,6 +131,10 @@ footer {
 	width: 100dvw;
 }
 
+strong {
+	font-weight: bold;
+}
+
 .menu {
 	flex-direction: column;
 	display: flex;
