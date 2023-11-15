@@ -1,7 +1,7 @@
-.header {
+/*.title { 
 	font-family: "Jolly lodger";
 	color: #260101;
-	font-size: 75px;
+	font-size: 100px;
 	font-weight: bold;
 	margin-left: auto;
 	margin-right: auto;
@@ -16,26 +16,10 @@
 	width: 100%;
 }
 
-.container {
+.contact {
 	display: flex;
 	flex-direction: column;
 	gap: 2.5em;
-}
-
-h2 {
-	color: black;
-	font-size: 25px;
-	font-family: "Lexend";
-}
-
-h1 {
-	color: #260101;
-	font-size: 25px;
-	font-family: "Lexend";
-	padding-left: 10px;
-	padding-right: 20px;
-	padding-top: 0px;
-	padding-bottom: 0px;
 }
 
 .box {
@@ -61,12 +45,8 @@ h1 {
 	font-size: 25px;
 }
 
-img {
-	float: right;
-	height: 100px;
-}
-
 .svg {
+	color: black;
 	float: right;
 	min-width: 100px;
 	min-height: 100px;
