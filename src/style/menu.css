@@ -1,29 +1,30 @@
 .menu {
-	margin: 1rem auto;
-	display: flex;
 	flex-direction: column;
+	display: flex;
+	margin: 1rem auto;
 	gap: 1rem;
-	width: 80%;
 }
 
 .menu-category {
-	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
-	& h2 {
-		flex-basis: 100%;
-	}
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.menu-category h2 {
+	flex-basis: 100%;
 }
 
 .menu-item {
 	flex-basis: 47%;
+}
 
-	& figure {
-		width: 100%;
-	}
-	& img {
-		width: 100%;
-		aspect-ratio: 1/1;
-		object-fit: cover;
-	}
+.menu-item figure {
+	width: 100%;
+}
+
+.menu-item img {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 100%;
 }

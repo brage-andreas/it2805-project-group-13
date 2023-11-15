@@ -1,68 +1,61 @@
 #background_image {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+	background-repeat: no-repeat;
+	background-image: url("../assets/images/homepage/background_image_homepage.png");
+	background-size: cover;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
 	height: 90dvh;
 	width: 100dvw;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("../assets/images/homepage/background_image_homepage.png");
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	gap: 0px;
+	align-content: center;
 	flex-wrap: wrap;
 	height: auto;
-
 	color: var(--white);
-	font-family: "Lexend";
+	gap: 0px;
 }
 
 .header {
+	margin-bottom: -2rem;
 	font-family: "Jolly lodger";
-	font-size: 175px;
-	font-weight: bold;
-	padding-left: 30px;
-	margin-bottom: -30px;
+	font-weight: 500;
+	font-size: 11rem;
 }
 
 #greetings {
-	font-size: 75px;
+	text-align: center;
+	font-size: 3.75rem;
 }
 
 #logo {
 	font-family: "Berkshire Swash";
-	padding-left: 20px;
 }
 
 .undertitle {
-	padding-top: 70px;
 	font-weight: normal;
-	font-size: 30px;
+	margin-top: 4.5rem;
+	text-align: center;
+	font-size: 1.75rem;
 }
 
 #refs {
-	font-size: 20px;
 	flex-direction: row;
-	color: var(--header-background-color);
 	font-weight: bold;
-}
-
-#refs span {
-	margin-left: 60px;
+	font-size: 1.25rem;
+	color: var(--header-background-color);
 }
 
 .container a:link {
-	color: var(--header-background-color);
 	text-decoration: none;
+	color: var(--header-background-color);
 }
 
 .container a:visited {
-	color: var(--header-background-color);
 	text-decoration: none;
+	color: var(--header-background-color);
 }
 
 .container a:hover {
