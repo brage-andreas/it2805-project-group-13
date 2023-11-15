@@ -282,6 +282,7 @@ strong {
 
 .box img {
 	border-radius: var(--default-border-radius);
+	height: 15rem;
 }
 
 .svg {
