@@ -1,3 +1,4 @@
+// Define a data object with menu items details
 const data = {
 	items: [
 		{
@@ -91,37 +92,46 @@ const data = {
 	]
 };
 
+// Function to create a single menu item element
 function createMenuItem(item) {
-	// Initialize menu item
+	// Initialize a div element for the menu item
 	const elementMenuItem = document.createElement("div");
 	elementMenuItem.classList.add("menu-item");
 
+	// Create a figure element for the item image
 	{
 		const elementFigure = document.createElement("figure");
 		const elementImage = document.createElement("img");
-		elementImage.src = item.src;
+		elementImage.src = item.src; // Set image source
 
+		// Add image credit
 		const elementCredit = document.createElement("small");
 		elementCredit.textContent = item.credit;
 
+		// Append image and credit to the figure
 		elementFigure.appendChild(elementImage);
 		elementFigure.appendChild(elementCredit);
 
+		// Append figure to the menu item
 		elementMenuItem.appendChild(elementFigure);
 	}
 
+	// Create and append item name
 	const elementName = document.createElement("h3");
 	elementName.textContent = item.name;
 	elementMenuItem.appendChild(elementName);
 
+	// Create and append item price
 	const elementPrice = document.createElement("p");
 	elementPrice.textContent = item.price + " €";
 	elementMenuItem.appendChild(elementPrice);
 
+	// Create and append item description
 	const elementDescription = document.createElement("p");
 	elementDescription.textContent = item.description;
 	elementMenuItem.appendChild(elementDescription);
 
+	// Create and append item ingredients if they exist
 	if (item.ingredients) {
 		const elementIngredients = document.createElement("p");
 		elementIngredients.textContent =
@@ -129,33 +139,39 @@ function createMenuItem(item) {
 		elementMenuItem.appendChild(elementIngredients);
 	}
 
-	return elementMenuItem;
+	return elementMenuItem; // Return the complete menu item
 }
 
 // Main starts here
 
+// Select the main element in the document
 const elementMain = document.querySelector("main");
 
-// Create menu
+// Create a div for the menu
 const elementMenu = document.createElement("div");
 {
-	elementMenu.classList.add("menu");
+	elementMenu.classList.add("menu"); // Add class for styling
 
-	// Create list for every category
+	// Extract unique categories from the data
 	const categories = data.items.map((item) => item.category);
 	const uniqueCategories = [...new Set(categories)];
 
+	// Create list for every category
 	const menuContents = uniqueCategories.map((category) => {
+		// Create a div for each menu category
 		const elementMenuCategory = document.createElement("div");
 		elementMenuCategory.classList.add("menu-category");
 
+		// Create and append category name
 		const elementCategoryName = document.createElement("h2");
 		elementCategoryName.textContent = category;
 
+		// Filter and create menu items for the category
 		const menuItems = data.items
 			.filter((item) => item.category === category)
 			.map(createMenuItem);
 
+		// Append category name and items to the category div
 		elementMenuCategory.appendChild(elementCategoryName);
 		menuItems.forEach((menuItem) =>
 			elementMenuCategory.appendChild(menuItem)
