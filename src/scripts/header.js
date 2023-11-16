@@ -59,6 +59,7 @@ function createHeader() {
 		"Order now",
 		"bell-concierge",
 		"order-now.html"
+		"order.html"
 	);
 
 	const contactButton = createNavButton(
