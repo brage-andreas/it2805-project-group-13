@@ -20,9 +20,11 @@ function createNavButton(label, icon, href) {
 function createHeader() {
 	const header = document.createElement("header");
 
-	header.classList.add("flex-column");
-	header.style.justifyContent = "space-between";
-	header.style.alignItems = "center";
+	const headerBoxDiv = document.createElement("div");
+
+	headerBoxDiv.classList.add("flex-column");
+	headerBoxDiv.style.justifyContent = "space-between";
+	headerBoxDiv.style.alignItems = "center";
 
 	const headerDiv = document.createElement("div");
 	headerDiv.classList.add("flex-row");
@@ -47,6 +49,7 @@ function createHeader() {
 
 	nav.classList.add("flex-row");
 	nav.style.alignItems = "center";
+	nav.style.flexWrap = "wrap";
 
 	const homeButton = createNavButton("Home", "house-chimney", "index.html");
 	const menuButton = createNavButton("Our menu", "wine-bottle", "menu.html");
@@ -55,7 +58,7 @@ function createHeader() {
 	const orderButton = createNavButton(
 		"Order now",
 		"bell-concierge",
-		"order.html"
+		"order-now.html"
 	);
 
 	const contactButton = createNavButton(
@@ -64,6 +67,28 @@ function createHeader() {
 		"contact.html"
 	);
 
+	const fullUrl = document.documentURI;
+	/* Dynamically add active class to current nav button */
+	switch (true) {
+		case fullUrl.includes("index.html"):
+			homeButton.classList.add("active");
+			break;
+		case fullUrl.includes("menu.html"):
+			menuButton.classList.add("active");
+			break;
+		case fullUrl.includes("about.html"):
+			aboutButton.classList.add("active");
+			break;
+		case fullUrl.includes("order-now.html"):
+			orderButton.classList.add("active");
+			break;
+		case fullUrl.includes("contact.html"):
+			contactButton.classList.add("active");
+			break;
+		default:
+			break;
+	}
+
 	const pillDivPlaceholder = document.createElement("div");
 	pillDivPlaceholder.id = "pill-div-placeholder";
 
@@ -71,7 +96,9 @@ function createHeader() {
 	nav.append(homeButton, menuButton, orderButton, aboutButton, contactButton);
 
 	headerDiv.append(brandingDiv, nav);
-	header.append(headerDiv, pillDivPlaceholder);
+	headerBoxDiv.append(headerDiv);
+
+	header.append(headerBoxDiv, pillDivPlaceholder);
 
 	return header;
 }

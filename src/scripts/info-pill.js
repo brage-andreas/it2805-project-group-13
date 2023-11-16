@@ -111,7 +111,7 @@ function createClosedInfoPill(innerDiv) {
 
 function createInfoPill() {
 	const outerDiv = document.createElement("div");
-	outerDiv.classList.add("flex-row", "info-pill-container");
+	outerDiv.classList.add("info-pill-container");
 
 	const innerDiv = document.createElement("div");
 	innerDiv.classList.add("flex-row", "info-pill");
