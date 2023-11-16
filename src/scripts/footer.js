@@ -7,8 +7,8 @@ if (elementFooter === null) {
 const sites = [
 	["Home page", "index.html"],
 	["Menu", "menu.html"],
-	["About us", "about.html"],
-	["Contact us", "contact.html"],
+	["About us", "about-us.html"],
+	["Contact us", "contact-us.html"],
 	["Order now", "order-now.html"]
 ].map(([name, url]) => {
 	const link = document.createElement("a");
