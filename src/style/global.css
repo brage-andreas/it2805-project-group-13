@@ -127,6 +127,11 @@ header nav a.flex-row {
 	gap: 1ch;
 }
 
+/* Color for active nav button */
+header nav a.active {
+	background-color: var(--darker-red);
+}
+
 #header-main-row {
 	justify-content: space-between;
 }
