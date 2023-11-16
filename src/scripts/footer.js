@@ -30,8 +30,8 @@ function createFooter() {
 	brandSection.style.gap = "1ch";
 
 	const brandLogo = document.createElement("img");
-	brandLogo.src = "public/papas-logo.png";
-	brandLogo.alt = "Papa's logo";
+	brandLogo.src = "assets/logo/papas-logo.png";
+	brandLogo.alt = "Logo of Papa's";
 
 	const brandName = document.createElement("h1");
 	brandName.textContent = "Papa's";
