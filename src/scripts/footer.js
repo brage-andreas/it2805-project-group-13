@@ -9,7 +9,7 @@ const sites = [
 	["Menu", "menu.html"],
 	["About us", "about.html"],
 	["Contact us", "contact.html"],
-	["Order now", "order.html"]
+	["Order now", "order-now.html"]
 ].map(([name, url]) => {
 	const link = document.createElement("a");
 	link.textContent = name;

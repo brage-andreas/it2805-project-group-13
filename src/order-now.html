@@ -34,30 +34,53 @@
 	<body>
 		<header></header>
 
-		<main>
-			<h1>Order now</h1>
-			<img
-				id="lasagna"
-				src="assets/images/ordernow/lasagna.png"
-				alt="picture of a lasagna"
-			/>
-			<div class="order-now">
-				<p>
-					Takeaway can be ordered by web or phone.<br />
-					We also support Wolt as our delivery service.
-				</p>
-				<p>
-					You can order food straight to your door, or<br />
-					alternatively order a self-pickup.
-				</p>
+		<main class="flex-col" style="gap: 3rem">
+			<div class="flex-row" style="justify-content: space-between">
+				<div class="flex-col" style="gap: 1rem">
+					<h1>Order now</h1>
+
+					<p>
+						Takeaway can be ordered by web or phone.<br />
+						We also support Wolt as our delivery service.
+					</p>
+
+					<p>
+						You can order food straight to your door, or<br />
+						alternatively order a self-pickup.
+					</p>
+
+					<p>
+						<span style="font-weight: bold">
+							And you'll have your food in
+						</span>
+						<span style="font-weight: bold">
+							under 40 minutes!
+						</span>
+					</p>
+
+					<a href="order.html" class="button" id="order-now-button">
+						Place an order
+					</a>
+				</div>
+
+				<div class="flex-col">
+					<img
+						id="lasagna"
+						src="assets/images/ordernow/lasagna.png"
+						alt="picture of a lasagna"
+					/>
+				</div>
 			</div>
-			<div class="order-now">
-				<span style="font-weight: bold"
-					>And you'll have your food in </span
-				><span style="font-weight: bold">under 40 minutes!</span>
-			</div>
-			<div id="buttons">
-				<a href="order.html" id="order-now-button">place an order</a>
+
+			<!-- From https://embed-googlemap.com -->
+			<div class="mapouter">
+				<div class="gmap_canvas">
+					<iframe
+						class="gmap_iframe"
+						src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=10%20Loc.%20Cala%20di%20Volpe,%20Arzachena%20Olbia-Tempio%2007020%20Italy&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+					>
+					</iframe>
+				</div>
 			</div>
 		</main>
 
