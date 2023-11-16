@@ -355,7 +355,7 @@ footer a {
 }
 
 .box {
-	border-radius: 0.875rem;
+	border-radius: var(--bigger-border-radius);
 	background-color: var(--card-background-color);
 	padding-left: 10px;
 	padding-right: 30px;
@@ -379,44 +379,32 @@ footer a {
 
 /* Order */
 label,
+input,
+button {
+	border-radius: var(--default-border-radius);
+	border: 0;
+}
+
+label,
 input {
-	font-size: 1.5em;
+	font-size: 1.25rem;
 }
 
-input {
-	height: 2em;
-	min-width: 40ch;
-	border-radius: 1em;
-	border-style: solid;
-	border-color: var(--black);
-	border-width: 2px;
-}
-
-button[type="submit"] {
-	font-size: 0.75rem;
-	padding: 0.6em 3em;
-	margin: 0.25em;
-	border-radius: 1em;
-	color: var(--white);
-	background-color: var(--base-green);
-	cursor: pointer;
-}
-
-button[type="button"] {
-	font-size: 0.75rem;
-	padding: 0.6em 3em;
-	margin: 0.25em;
-	border-radius: 1em;
-	color: var(--white);
+#back-button {
 	background-color: var(--red);
-	cursor: pointer;
+	color: var(--white);
 }
 
-button[type="button"]:hover {
+#back-button:hover {
 	background-color: var(--darker-red);
 }
 
-button[type="submit"]:hover {
+#order-now-button {
+	background-color: var(--base-green);
+	color: var(--white);
+}
+
+#order-now-button:hover {
 	background-color: var(--darker-green);
 }
 
