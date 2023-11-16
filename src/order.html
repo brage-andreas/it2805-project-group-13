@@ -37,53 +37,59 @@
 		<div id="page">
 			<main>
 				<h1 id="Title">Place your order</h1>
-				<form>
-					<div id="inputfields">
-						<div>
-							<label for="full-name">Full name</label><br />
-							<input
-								type="text"
-								id="full-name"
-								name="Full name"
-								required
-							/>
-						</div>
-						<div>
-							<label for="address">Address</label><br />
-							<input
-								type="text"
-								id="address"
-								name="Address"
-								required
-							/>
-						</div>
-						<div>
-							<label for="phone-number">Phone number</label><br />
-							<input
-								type="text"
-								id="phone-number"
-								name="Phone number"
-								required
-							/>
-						</div>
-						<div>
-							<label for="email">Email adress</label><br />
-							<input
-								type="email"
-								id="email"
-								name="Email address"
-								required
-							/>
-						</div>
-						<div>
-							<label for="food-items">Food items</label><br />
-							<input
-								type="text"
-								id="food-items"
-								name="Food items"
-								required
-							/>
-						</div>
+
+				<form class="flex-col" style="gap: 0.875rem">
+					<div>
+						<label for="full-name">Full name</label><br />
+						<input
+							type="text"
+							id="full-name"
+							name="Full name"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="address">Address</label><br />
+						<input
+							type="text"
+							id="address"
+							name="Address"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="phone-number">Phone number</label><br />
+						<input
+							type="text"
+							id="phone-number"
+							name="Phone number"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="email">Email adress</label><br />
+						<input
+							type="email"
+							id="email"
+							name="Email address"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="food-items">Food items</label><br />
+						<input
+							type="text"
+							id="food-items"
+							name="Food items"
+							required
+						/>
+					</div>
+
+					<div>
 						<label for="drink-items">Drinks items</label><br />
 						<input
 							type="text"
@@ -92,11 +98,22 @@
 						/>
 					</div>
 
-					<div id="buttons">
-						<a href="order-now.html" class="button" id="back-button">
-							back
+					<div class="flex-row">
+						<a
+							href="order-now.html"
+							class="button"
+							id="back-button"
+						>
+							Back
 						</a>
-						<button type="submit">Order now</button>
+
+						<button
+							class="button"
+							id="order-now-button"
+							type="submit"
+						>
+							Order now
+						</button>
 					</div>
 				</form>
 			</main>
