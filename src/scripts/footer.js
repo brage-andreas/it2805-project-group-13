@@ -22,8 +22,7 @@ function createFooter() {
 	const footer = document.createElement("footer");
 
 	const brandAndCopyrightSection = document.createElement("div");
-	brandAndCopyrightSection.classList.add("flex-row");
-	brandAndCopyrightSection.style.alignItems = "center";
+	brandAndCopyrightSection.classList.add("flex-col");
 
 	const brandSection = document.createElement("span");
 	brandSection.classList.add("flex-row");
