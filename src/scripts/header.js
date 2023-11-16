@@ -36,8 +36,7 @@ function createHeader() {
 	brandingDiv.style.alignItems = "center";
 
 	const logo = document.createElement("img");
-
-	logo.src = "public/papas-logo.png";
+	logo.src = "assets/logo/papas-logo.png";
 	logo.alt = "Logo of Papa's";
 	logo.style.maxHeight = "3rem";
 
