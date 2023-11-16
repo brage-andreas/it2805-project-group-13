@@ -20,7 +20,7 @@
 	--light-grey: #e6e5e0;
 	--black: #260101;
 	--white: #ffffff;
-	--red: #ef4444
+	--red: #ef4444;
 }
 
 /* Kevin Powell's CSS reset */
@@ -190,7 +190,6 @@ footer a {
 	color: var(--black);
 }
 /*  */
-
 .pre-layout {
 	min-width: 70ch;
 	margin: 0 auto 1rem auto;
