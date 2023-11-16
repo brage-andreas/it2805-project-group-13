@@ -142,7 +142,7 @@ function createMenuItem(item) {
 	return elementMenuItem; // Return the complete menu item
 }
 
-// Main execution starts here
+// Main starts here
 
 // Select the main element in the document
 const elementMain = document.querySelector("main");
