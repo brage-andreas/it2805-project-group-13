@@ -55,7 +55,8 @@
 
 		<main class="flex-col" style="gap: 1.5rem">
 			<div>
-				<h1>Our project</h1>
+				<h1>P3 changes group 13</h1>
+				<h3>Link to the main-page of our website</h3>
 				<a
 					href="https://brage-andreas.github.io/webtek-gruppe-13/src/index.html"
 					class="button"
@@ -76,16 +77,13 @@
 					<li>
 						We changed some filenames from P2:
 						<ul>
-							<li>about-us.html is now called about.html</li>
-							<li>contact-us.html is now called contact.html</li>
-							<li>order-form.html is now called order.html</li>
-							<li>order.html is now called ordernow.html</li>
+							<li>order.html is now called order-now.html</li>
 						</ul>
 					</li>
 					<li>
 						The boxes on the contact-us page no longer have a set
 						width and height in pixles. The width of the box is
-						deterimined by the main element width and the height is
+						determined by the main element width and the height is
 						determined by the svg height and padding.
 					</li>
 					<li>
@@ -94,6 +92,19 @@
 					<li>
 						We didn't use JavaScript to implement the map
 						functionality, hence there is no map.js file.
+					</li>
+					<li>Our layout.js turned into footer.js and header.js</li>
+					<li>Our button.js is integrated into our header.js</li>
+					<li>Our widget.js is now called info-pill.js</li>
+					<li>
+						Small aesthetic adjustments to our menu page and our
+						about-us page to make it more aeshtetically pleasing.
+					</li>
+					<li>
+						We decided not to use a JSON-file for our menu-page,
+						instead we stored all the menu items in an array within
+						the menu.js and itterated through the array with a map
+						function to update the menu-page html.
 					</li>
 				</ul>
 			</section>
@@ -107,11 +118,11 @@
 								Malik & Brage M finished this task
 								<ul>
 									<li>
-										This component in the header will check
-										the current time to see whether it
-										should display as an open or closed
-										variant using JavaScript. We will use
-										JavaScript's Date object.
+										This component in the header checks the
+										current time to see whether it should
+										display as an open or closed variant
+										using JavaScript. We used JavaScript's
+										Date object.
 									</li>
 								</ul>
 							</li>
@@ -119,17 +130,17 @@
 					</li>
 
 					<li>
-						Nav button will update styling based on which site you
-						are on
+						Nav button updates styling based on which site you are
+						on
 						<ul>
 							<li>
 								Maksymilian finished this task
 								<ul>
 									<li>
-										This button will update its styling
-										based on whether the current url path
-										matches its target. We will use a CSS
-										class for this.
+										This button updates its styling based on
+										whether the current url path matches its
+										target. We used JavaScript to update the
+										CSS class dynamically.
 									</li>
 								</ul>
 							</li>
@@ -143,9 +154,9 @@
 								Brage finished this task
 								<ul>
 									<li>
-										We will of course not make this map
-										ourselves, and use tools from Google
-										Maps to achieve this
+										We used tools from Google Maps to
+										implement the interactive map showing
+										Papa's location.
 									</li>
 								</ul>
 							</li>
@@ -153,17 +164,15 @@
 					</li>
 
 					<li>
-						Menu list implemented with pre-made JSON data and a for
-						loop in Javascript
+						Menu list implemented with hardcoded data in menu.js.
 						<ul>
 							<li>
 								Philip finished this task
 								<ul>
 									<li>
-										We will use a for loop iterating over
-										the data in our pre-mde JSON file, which
-										we will import using JavaScripts import
-										function
+										We used a map function iterating over
+										the data in our items array to update
+										the menu-page html.
 									</li>
 								</ul>
 							</li>
@@ -176,22 +185,19 @@
 				<h2>Final files</h2>
 				<p>
 					This section will show how each member contributed to the
-					project, when they added their respective files to the main
-					branch on our group github and show all the files we used in
-					the final project.
+					project, which files they worked on and show all the files
+					we used in the final project.
 				</p>
 
 				<br />
 
 				<h3>Images</h3>
 				<ul>
-					<li>
-						Brage A created papas-logo.png and shared it with the
-						group on 02.11.2023.
-					</li>
+					<li>Brage A created papas-logo.png</li>
 					<li>
 						Remaining images were found on the internet, we made
-						sure that they were free to use.
+						sure that they were free to use. We also used AI to
+						generate some of the images.
 					</li>
 				</ul>
 
@@ -199,64 +205,53 @@
 
 				<h3>HTML pages</h3>
 				<ul>
+					<li>about-us.html was made by Brage M.</li>
+					<li>menu.html was made by Brage A & Philip.</li>
+					<li>contact-us.html was made by Maksymilian.</li>
 					<li>
-						about.html (formerly about-us.html) was made by Brage M
-						and finalised on 08.11.2023.
+						order-form.html and order-now.html (formerly order.html)
+						were made by Malik.
 					</li>
-					<li>
-						menu.html was made by Brage A & Philip and finalised on
-						02.11.2023.
-					</li>
-					<li>
-						contact.html (formerly contact-us.html) was made by
-						Maksymilian and finalised on 07.11.2023.
-					</li>
-					<li>
-						order.html (formerly order-form.html) and ordernow.html
-						(formerly order.html) were made by Malik and finalised
-						on 02.11.2023.
-					</li>
-					<li>
-						index.html was made by Maksymilian & Brage M and
-						finalised on 12.11.2023,
-					</li>
+					<li>index.html was made by Maksymilian & Brage M.</li>
 				</ul>
 
 				<br />
 				<h3>CSS stylesheets</h3>
 
 				<ul>
-					<li>
-						global.css was made by Brage A and shared with the group
-						on 09.11.2023, we continued to update this file up until
-						16.11.2023 as we fine tuned the css.
-					</li>
+					<li>global.css was made by Brage A.</li>
 				</ul>
 
 				<br />
 
 				<h3>JavaScript scripts</h3>
 				<ul>
-					<li>
-						footer.js was made by Maksymilian and finalised on
-						13.11.2023
-					</li>
-					<li>
-						header.js was made by Malik & Brage M and finalised on
-						12.11.2023
-					</li>
-					<li>
-						info-pill.js was made Brage A and finalised on
-						12.11.2023
-					</li>
-					<li>
-						menu.js was made by Philip and finalised on 12.11.2023
-					</li>
+					<li>footer.js was made by Maksymilian.</li>
+					<li>header.js was made by Malik & Brage M.</li>
+					<li>info-pill.js was made Brage A.</li>
+					<li>menu.js was made by Philip.</li>
 				</ul>
+			</section>
+			<section>
+				<h2>Responsive web design</h2>
+				<p>
+					Our website was designed with desktops and laptops in mind.
+					The website is responsive when the window scales, however it
+					does not have a specific layout for mobile phones. This is a
+					feature we would prioritise in the future.
+				</p>
 			</section>
 
 			<section>
 				<h2>Modularity</h2>
+				<p>
+					To achieve the modularity requirement we made our footer and
+					header in JavaScript so you can import the code for every
+					page. All our CSS is stored in our global.css file. We
+					worked together to achieve the modularity requirement, since
+					Brage M and Philip had the most experience in web-design
+					they helped the rest of the group along the way.
+				</p>
 			</section>
 
 			<section>
@@ -274,73 +269,88 @@
 						src
 						<ul>
 							<li>
-								assets/images
+								assets
 								<ul>
 									<li>
-										dessert
+										images
 										<ul>
-											<li>panna-cotta-pixabay.jpg</li>
 											<li>
-												tiramisu_taqnia-creative-studio.jpg
+												dessert
+												<ul>
+													<li>
+														panna-cotta-pixabay.jpg
+													</li>
+													<li>
+														tiramisu_taqnia-creative-studio.jpg
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												drink
+												<ul>
+													<li>
+														coca-cola_pixabay.jpg
+													</li>
+													<li>
+														fanta_sandu-muresan.jpg
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												homepage
+												<ul>
+													<li>
+														background_image_homepage.png
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												ordernow
+												<ul>
+													<li>lasagna.png</li>
+												</ul>
+											</li>
+
+											<li>
+												pasta
+												<ul>
+													<li>
+														bolognese_monica-turlui.jpg
+													</li>
+													<li>
+														carbonara_alejandro-aznar.jpg
+													</li>
+													<li>
+														lasagne_alleksana.jpg
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												pizza
+												<ul>
+													<li>
+														margherita_rene-strgar.jpg
+													</li>
+													<li>
+														pepperoni_victor-miyata.jpg
+													</li>
+												</ul>
 											</li>
 										</ul>
 									</li>
-
 									<li>
-										drink
+										logo
 										<ul>
-											<li>coca-cola_pixabay.jpg</li>
-											<li>fanta_sandu-muresan.jpg</li>
-										</ul>
-									</li>
-
-									<li>
-										homepage
-										<ul>
-											<li>
-												background_image_homepage.png
-											</li>
-										</ul>
-									</li>
-
-									<li>
-										ordernow
-										<ul>
-											<li>lasagna.png</li>
-										</ul>
-									</li>
-
-									<li>
-										pasta
-										<ul>
-											<li>bolognese_monica-turlui.jpg</li>
-											<li>
-												carbonara_alejandro-aznar.jpg
-											</li>
-											<li>lasagne_alleksana.jpg</li>
-										</ul>
-									</li>
-
-									<li>
-										pizza
-										<ul>
-											<li>margherita_rene-strgar.jpg</li>
-											<li>pepperoni_victor-miyata.jpg</li>
+											<li>papas-logo.png</li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 						</ul>
-
-						<ul>
-							<li>
-								public
-								<ul>
-									<li>papas-logo.png</li>
-								</ul>
-							</li>
-						</ul>
-
 						<ul>
 							<li>
 								scripts
@@ -363,12 +373,12 @@
 						</ul>
 
 						<ul>
-							<li>about.html</li>
-							<li>contact.html</li>
+							<li>about-us.html</li>
+							<li>contact-us.html</li>
 							<li>index.html</li>
 							<li>menu.html</li>
-							<li>order.html</li>
-							<li>ordernow.html</li>
+							<li>order-form.html</li>
+							<li>order-now.html</li>
 						</ul>
 					</li>
 				</ul>
