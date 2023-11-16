@@ -420,6 +420,11 @@ button[type="submit"]:hover {
 	background-color: var(--darker-green);
 }
 
+.about-img {
+	border-radius: var(--default-border-radius);
+	height: 15rem;
+}
+
 /* From https://embed-googlemap.com */
 iframe {
 	border: 0;
