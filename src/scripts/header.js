@@ -58,7 +58,7 @@ function createHeader() {
 	const orderButton = createNavButton(
 		"Order now",
 		"bell-concierge",
-		"ordernow.html"
+		"order-now.html"
 	);
 
 	const contactButton = createNavButton(
@@ -66,6 +66,28 @@ function createHeader() {
 		"paper-plane",
 		"contact.html"
 	);
+
+	const fullUrl = document.documentURI;
+	/* Dynamically add active class to current nav button */
+	switch (true) {
+		case fullUrl.includes("index.html"):
+			homeButton.classList.add("active");
+			break;
+		case fullUrl.includes("menu.html"):
+			menuButton.classList.add("active");
+			break;
+		case fullUrl.includes("about.html"):
+			aboutButton.classList.add("active");
+			break;
+		case fullUrl.includes("order-now.html"):
+			orderButton.classList.add("active");
+			break;
+		case fullUrl.includes("contact.html"):
+			contactButton.classList.add("active");
+			break;
+		default:
+			break;
+	}
 
 	const pillDivPlaceholder = document.createElement("div");
 	pillDivPlaceholder.id = "pill-div-placeholder";
