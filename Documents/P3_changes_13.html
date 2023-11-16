@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style/global.css" />
+
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!------------------>
+
+		<title>P3 Papa's - Gruppe 13</title>
+	</head>
+	<body>
+		<!-- Author information and pre-layout -->
+		<header class="pre-layout flex-col">
+			<div class="flex-row" style="align-items: baseline">
+				<h1 style="font-size: 1.5rem">P3</h1>
+				<h3 style="font-size: 0.875rem">
+					Brage A, Brage M, Maksymilian, Malik, og Philip
+				</h3>
+			</div>
+
+			<div class="flex-row">
+				<a
+					href="https://brage-andreas.github.io/webtek-gruppe-13/"
+					style="font-size: 0.875rem"
+					class="button"
+				>
+					⬅️ Back to portal
+				</a>
+
+				<a
+					href="https://github.com/brage-andreas/webtek-gruppe-13/"
+					target="_blank"
+					style="font-size: 0.875rem"
+					class="button"
+				>
+					😸 GitHub
+				</a>
+			</div>
+
+			<small style="margin-top: 0.25rem">
+				Submitted <time datetime="2023-11-16">2023-11-16</time>
+			</small>
+		</header>
+
+		<hr />
+		<!--------------------------------------->
+
+		<main class="flex-col" style="gap: 1.5rem">
+			<div>
+				<h1>Our project</h1>
+				<a
+					href="https://brage-andreas.github.io/webtek-gruppe-13/src/index.html"
+					class="button"
+				>
+					✨ Go to project
+				</a>
+			</div>
+
+			<section>
+				<h2>List of changes</h2>
+				<ul>
+					<li>
+						In our initial design from P2 our pages varried in
+						width, this has been changed to make the pages look more
+						uniform and aesthetically pleasing. We achieved this by
+						adding a main element with a set width.
+					</li>
+					<li>
+						We changed some filenames from P2:
+						<ul>
+							<li>about-us.html is now called about.html</li>
+							<li>contact-us.html is now called contact.html</li>
+							<li>order-form.html is now called order.html</li>
+							<li>order.html is now called ordernow.html</li>
+						</ul>
+					</li>
+					<li>
+						The boxes on the contact-us page no longer have a set
+						width and height in pixles. The width of the box is
+						deterimined by the main element width and the height is
+						determined by the svg height and padding.
+					</li>
+					<li>
+						Added a dessert and drinks section to our menu page.
+					</li>
+					<li>
+						We didn't use JavaScript to implement the map
+						functionality, hence there is no map.js file.
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Minimum Requirements</h2>
+				<ul>
+					<li>
+						Automatic element showing open/closed in header
+						<ul>
+							<li>
+								Malik & Brage M finished this task
+								<ul>
+									<li>
+										This component in the header will check
+										the current time to see whether it
+										should display as an open or closed
+										variant using JavaScript. We will use
+										JavaScript's Date object.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						Nav button will update styling based on which site you
+						are on
+						<ul>
+							<li>
+								Maksymilian finished this task
+								<ul>
+									<li>
+										This button will update its styling
+										based on whether the current url path
+										matches its target. We will use a CSS
+										class for this.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						An interactive map showing Papa's location
+						<ul>
+							<li>
+								Brage finished this task
+								<ul>
+									<li>
+										We will of course not make this map
+										ourselves, and use tools from Google
+										Maps to achieve this
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						Menu list implemented with pre-made JSON data and a for
+						loop in Javascript
+						<ul>
+							<li>
+								Philip finished this task
+								<ul>
+									<li>
+										We will use a for loop iterating over
+										the data in our pre-mde JSON file, which
+										we will import using JavaScripts import
+										function
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Final files</h2>
+				<p>
+					This section will show how each member contributed to the
+					project, when they added their respective files to the main
+					branch on our group github and show all the files we used in
+					the final project.
+				</p>
+
+				<br />
+
+				<h3>Images</h3>
+				<ul>
+					<li>
+						Brage A created papas-logo.png and shared it with the
+						group on 02.11.2023.
+					</li>
+					<li>
+						Remaining images were found on the internet, we made
+						sure that they were free to use.
+					</li>
+				</ul>
+
+				<br />
+
+				<h3>HTML pages</h3>
+				<ul>
+					<li>
+						about.html (formerly about-us.html) was made by Brage M
+						and finalised on 08.11.2023.
+					</li>
+					<li>
+						menu.html was made by Brage A & Philip and finalised on
+						02.11.2023.
+					</li>
+					<li>
+						contact.html (formerly contact-us.html) was made by
+						Maksymilian and finalised on 07.11.2023.
+					</li>
+					<li>
+						order.html (formerly order-form.html) and ordernow.html
+						(formerly order.html) were made by Malik and finalised
+						on 02.11.2023.
+					</li>
+					<li>
+						index.html was made by Maksymilian & Brage M and
+						finalised on 12.11.2023,
+					</li>
+				</ul>
+
+				<br />
+				<h3>CSS stylesheets</h3>
+
+				<ul>
+					<li>
+						global.css was made by Brage A and shared with the group
+						on 09.11.2023, we continued to update this file up until
+						16.11.2023 as we fine tuned the css.
+					</li>
+				</ul>
+
+				<br />
+
+				<h3>JavaScript scripts</h3>
+				<ul>
+					<li>
+						footer.js was made by Maksymilian and finalised on
+						13.11.2023
+					</li>
+					<li>
+						header.js was made by Malik & Brage M and finalised on
+						12.11.2023
+					</li>
+					<li>
+						info-pill.js was made Brage A and finalised on
+						12.11.2023
+					</li>
+					<li>
+						menu.js was made by Philip and finalised on 12.11.2023
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Modularity</h2>
+			</section>
+
+			<section>
+				<h2>List of files and folders</h2>
+				<p>
+					This section will detail how we structured our directory for
+					the project. Our intentions were to make it as structured
+					and easily navigable as possible.
+				</p>
+
+				<br />
+
+				<ul>
+					<li>
+						src
+						<ul>
+							<li>
+								assets/images
+								<ul>
+									<li>
+										dessert
+										<ul>
+											<li>panna-cotta-pixabay.jpg</li>
+											<li>
+												tiramisu_taqnia-creative-studio.jpg
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										drink
+										<ul>
+											<li>coca-cola_pixabay.jpg</li>
+											<li>fanta_sandu-muresan.jpg</li>
+										</ul>
+									</li>
+
+									<li>
+										homepage
+										<ul>
+											<li>
+												background_image_homepage.png
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										ordernow
+										<ul>
+											<li>lasagna.png</li>
+										</ul>
+									</li>
+
+									<li>
+										pasta
+										<ul>
+											<li>bolognese_monica-turlui.jpg</li>
+											<li>
+												carbonara_alejandro-aznar.jpg
+											</li>
+											<li>lasagne_alleksana.jpg</li>
+										</ul>
+									</li>
+
+									<li>
+										pizza
+										<ul>
+											<li>margherita_rene-strgar.jpg</li>
+											<li>pepperoni_victor-miyata.jpg</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								public
+								<ul>
+									<li>papas-logo.png</li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								scripts
+								<ul>
+									<li>footer.js</li>
+									<li>header.js</li>
+									<li>info-pill.js</li>
+									<li>menu.js</li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								style
+								<ul>
+									<li>global.css</li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul>
+							<li>about.html</li>
+							<li>contact.html</li>
+							<li>index.html</li>
+							<li>menu.html</li>
+							<li>order.html</li>
+							<li>ordernow.html</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>

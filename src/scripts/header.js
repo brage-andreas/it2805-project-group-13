@@ -53,7 +53,7 @@ function createHeader() {
 
 	const homeButton = createNavButton("Home", "house-chimney", "index.html");
 	const menuButton = createNavButton("Our menu", "wine-bottle", "menu.html");
-	const aboutButton = createNavButton("About us", "users", "about.html");
+	const aboutButton = createNavButton("About us", "users", "about-us.html");
 
 	const orderButton = createNavButton(
 		"Order now",
@@ -64,7 +64,7 @@ function createHeader() {
 	const contactButton = createNavButton(
 		"Contact us",
 		"paper-plane",
-		"contact.html"
+		"contact-us.html"
 	);
 
 	const fullUrl = document.documentURI;

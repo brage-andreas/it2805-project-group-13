@@ -7,8 +7,8 @@ if (elementFooter === null) {
 const sites = [
 	["Home page", "index.html"],
 	["Menu", "menu.html"],
-	["About us", "about.html"],
-	["Contact us", "contact.html"],
+	["About us", "about-us.html"],
+	["Contact us", "contact-us.html"],
 	["Order now", "order-now.html"]
 ].map(([name, url]) => {
 	const link = document.createElement("a");
@@ -22,8 +22,7 @@ function createFooter() {
 	const footer = document.createElement("footer");
 
 	const brandAndCopyrightSection = document.createElement("div");
-	brandAndCopyrightSection.classList.add("flex-row");
-	brandAndCopyrightSection.style.alignItems = "center";
+	brandAndCopyrightSection.classList.add("flex-col");
 
 	const brandSection = document.createElement("span");
 	brandSection.classList.add("flex-row");
